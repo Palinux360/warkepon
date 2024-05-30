@@ -1,6 +1,6 @@
 {
   "name": "warkepon",
-  "version": "1.0.7",
+  "version": "1.0",
   "description": "Juego de práctica para entrenamiento de Javascript, CSS y HTML.",
   "main": "index.js",
   "scripts": {
