@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WARKEPON!</title>
+        <link rel="stylesheet" href="./styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+
+            <section id="titulos">
+                <h1 class="titulo">Warkepon</h1>
+                <h2 id="titulo-elige-mascota" class="subtitulo">Elige tu mascota:</h2>
+                <h2 id="titulo-elige-modo" class="subtitulo">Elige tu modo de juego:</h2>
+                <h2 id="titulo-elige-ataque" class="subtitulo">Elige tu ataque:</h2>
+                <h2 id="titulo-recorre-mapa" class="subtitulo">Recorre el mapa con tu mascota hasta chocar al adversario deseado:</h2> 
+                </section>
+                
+                <section id="modos-de-juego">
+                    <div id="contenedorModos" class="modos">   
+                        <input type = "radio" name="modo" id="enemigo-aleatorio"/>
+                        <label class="tarjeta-de-modos" for="enemigo-aleatorio">
+                           <p>Enemigo Aleatorio</p> 
+                           <img src="./assets/random.png" alt="Enemigo Aleatorio">
+                        </label>
+                        <input type = "radio" name="modo" id="mapa-enemigos"/>
+                        <label class="tarjeta-de-modos" for="mapa-enemigos">
+                            <p>Caverna de Enemigos</p> 
+                            <img src="./assets/mapa_caverna.png" alt="Caverna de Enemigos">
+                         </label>
+                        <input type = "radio" name="modo" id="enemigo-online"/>
+                        <label class="tarjeta-de-modos" for="enemigo-online">
+                            <p>Enemigo Online</p> 
+                            <img src="./assets/online_play.png" alt="Enemigo Online">
+                         </label>
+                    </div>
+                    <button id="boton-modo">Seleccionar</button>
+                </section>
+                
+                <section id="seleccionar-mascota">   
+                    <div id="contenedorTarjetas" class="tarjetas">   
+                    </div>
+                    <p></p>
+                    <button id="boton-mascota">Seleccionar</button>
+                    <p></p>
+                </section>
+        
+                <section id="ver-mapa">
+                    <canvas id="canvas-mapa"></canvas>
+                    <div> 
+                        <button id="mover1" 
+                        ontouchend="detenerMovimiento()" 
+                        ontouchstar="moverArriba()"
+                        onmouseup="detenerMovimiento()" 
+                        onmousedown="moverArriba()"
+                        >⬆</button> 
+                    </div>
+                    <div>  
+                        <button id="mover2" 
+                        ontouchend="detenerMovimiento()"
+                        onmouseup="detenerMovimiento()" 
+                        onmousedown="moverIzquierda()"
+                        ontouchstar="moverIzquierda()"
+                        >⬅</button> 
+                        <button id="mover3" 
+                        ontouchend="detenerMovimiento()"
+                        onmouseup="detenerMovimiento()" 
+                        onmousedown= "moverDerecha()"
+                        ontouchstar="moverDerecha()"
+                        >⮕</button> 
+                    </div>
+                    <div>
+                        <button id="mover4" 
+                        ontouchend="detenerMovimiento()"
+                        onmouseup="detenerMovimiento()" 
+                        onmousedown="moverAbajo()"
+                        ontouchstar="moverAbajo()"
+                        >⬇</button> 
+                    </div>
+                   <p></p> 
+                </section>
+        
+                <section id="seleccionar-ataque">
+            
+                    <div id="contenedorAtaques" class="tarjetas-ataques">           
+                    </div>
+        
+                    <section id="ver-combate">
+                        <p>.</p>
+                        <canvas id="canvas-combate"></canvas>
+                    </section>
+                    
+                    <div id="mensajes">
+                      <p id="resultado">Que comience el combate!</p>
+        
+                        <section id="reiniciar">
+                            <button id="boton-reiniciar">Reiniciar</button>
+                        </section>
+                    </div> 
+                    <p></p> 
+                    
+                    <div class="ataques">
+                        <div class="ataques-jugador">
+                           <!-- <p id="victorias-jugador">0</p>
+                            <p id="mascota-jugador"></p> -->
+                            <div id="ataques-del-jugador"></div>
+                        </div>
+                        <div class="ataques-enemigo">
+                            <!-- <p id="victorias-enemigo">0</p>
+                            <p id="mascota-enemigo"></p> -->
+                            <div id="ataques-del-enemigo"></div>
+                        </div>
+                    </div>
+                </section>
+        </div>
+
+        <footer>
+        <p>
+            Desarrollado por <a href="https://www.linkedin.com/in/palinux360" target="_blank">Palinux360</a> |
+            <a href="notas.html" target="_blank">Notas de diseño</a> |
+            <a href="instrucciones.html" target="_blank">Instrucciones del juego</a>
+        </p>
+    </footer>
+    
+        <script src="./js/warkepon.js"></script>
+       
+    </body>
+</html>

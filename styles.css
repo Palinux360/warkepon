@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #010242;
+  background-image: url('./assets/fondo.jpg');
+  background-repeat: repeat; /* Repite la imagen en ambas direcciones (horizontal y vertical) */
+  background-size: auto; /* Deja que la imagen se muestre en su tamaño original */
+  background-position: top left; /* Inicia la repetición desde la esquina superior izquierda */
+  margin: 0; /* Elimina el margen predeterminado del body */
+  height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana */
+}
+
+#container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px; /* Añade un padding inferior igual a la altura del footer */
+  box-sizing: border-box;
+}
+
+#titulos {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modos-de-juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #seleccionar-mascota {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.titulo {
+  color: white;
+  font-size: 32px;
+  font-family: 'Fredoka One', cursive;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 20px;
+}
+
+.modos {
+    display: flex;
+    gap: 10px;
+  }
+
+.tarjetas {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 10px; /* Espacio entre las tarjetas */
+
+  /* display: flex;
+  gap: 10px; */
+}
+
+.tarjetas-ataques {
+
+  display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Dos columnas */
+    gap: 10px; /* Espacio entre las tarjetas */
+    
+    /* display: flex;
+  gap: 10px; */
+}
+
+.tarjeta-de-modos {
+    width: 220px;
+    height: 100px;
+    background: #1d92aa;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+.tarjeta-de-mokepon {
+  width: 180px;
+  height: 100px;
+  background: #1d92aa;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.tarjeta-de-modos img {
+    width: 90px;
+  }
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+#boton-mascota, #boton-modo{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: #314fb7;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 15px;
+}
+
+#mover1, #mover2, #mover3, #mover4{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #314fb7;
+    border: 2px solid white;
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+  
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #314fb7;
+}
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #1f77ba;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border-color: #ffffff;
+    width: 80px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+#mensajes {
+  width: 280px;
+  background: #999999;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar, #boton-regresar {
+    width: 110px;
+    height: 40px;
+    border: solid;
+    background: #314fb7;
+    border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+#boton-reiniciar:hover, #boton-regresar:hover {
+  background: #273e8f; /* Color más oscuro al pasar el ratón por encima */
+}
+
+#boton-reiniciar:active, #boton-regresar:active {
+  background: #1f3373; /* Color aún más oscuro al hacer clic */
+  transform: scale(0.98); /* Leve efecto de pulsación */
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ver-mapa, #ver-combate{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas-mapa, #mapa-combate{
+  border: 2px solid white;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+
+}
+
+#content {
+  margin: 0 2%;
+    text-align: justify;
+    color: black;
+    width: 90%;
+    background: #dddcff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#content2 {
+  margin: 0 2% 0 1%;
+  text-align: justify;
+  color: black;
+  width: auto;
+  background: #cecdff;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.link-resaltado{
+  color: blue;
+  font-weight: bold;
+}
+
+a {
+  color: #00C9B7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #010242;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  flex-shrink: 0; /* Previene que el footer se encoja */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.volver-al-juego {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 680px) {
+  .modos{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .tarjetas {
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+   .tarjetas-ataques {
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 600px) {
+    .tarjetas, .tarjetas-ataques {
+  
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }

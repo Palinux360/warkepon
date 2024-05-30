@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Notas de diseño</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="container">
+
+        <section id="titulos">
+            <h1 class="titulo">Warkepon</h1>
+            <h2 class="subtitulo">Notas de diseño:</h2>
+        </section>
+    
+        <div id="content">
+            <p>Este juego fue desarrollado por <a href="https://www.linkedin.com/in/palinux360" target="_blank" class="link-resaltado">Palinux360</a> como parte de una reestructuración completa del código basado en el curso de programación básica de <a href="https://platzi.com/cursos/programacion-basica/" target="_blank" class="link-resaltado">Platzi</a>. Aunque el juego original fue un proyecto de la clase, se han realizado cambios significativos para mejorar la experiencia del usuario:</p>
+            <ul>
+                <li><strong>Modos de Juego:</strong> Se incorporaron diferentes modos de juego, incluyendo Enemigo Aleatorio, Caverna de Enemigos y Enemigo Online.</li>
+                <li><strong>Nuevas Mascotas:</strong> Se agregaron el resto de las mascotas planteadas en clase, más tres enemigos nuevos.</li>
+                <li><strong>Opciones dinámicas:</strong> El código se mejoró para incorporar nuevas mascotas fácilmente.</li>
+                <li><strong>Ataques aleatorios:</strong> Se mejoró el código que permite escoger aleatoriamente los ataques, para seleccionar los que realmente tiene la mascota oponente. </li>
+                <li><strong>Poderes Adicionales:</strong> Se incorporaron dos poderes adicionales para las mascotas (VIENTO y RAYO) y se modificó la lógica para los combates.</li>
+                <li><strong>Sonidos:</strong> Se agregaron sonidos al escoger opciones "mascota", "modo" y cuando se "dispara" un ataque.</li>
+                <li><strong>Animaciones de Ataque:</strong> Esta versión del juego muestra una animación de los ataques uno por uno, a diferencia del proyecto original que envia un arreglo de ataques y muestra un texto con el resultado final.</li>
+            </ul>
+            <button id="boton-regresar">Regresar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Desarrollado por <a href="https://www.linkedin.com/in/palinux360" target="_blank">Palinux360</a> |
+            <a href="notas.html" target="_blank">Notas de diseño</a> |
+            <a href="instrucciones.html" target="_blank">Instrucciones del juego</a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('boton-regresar').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+</body>
+</html>

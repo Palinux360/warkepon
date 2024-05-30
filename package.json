@@ -1,0 +1,27 @@
+{
+  "name": "warkepon",
+  "version": "1.0.7",
+  "description": "Juego de práctica para entrenamiento de Javascript, CSS y HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Warkepon",
+    "Hipodoge",
+    "Capipepo",
+    "Ratigueya",
+    "Langostelvis",
+    "Tucapalma",
+    "Pydos",
+    "Thoreon",
+    "Gokurry",
+    "Aerokrip"
+  ],
+  "author": "Palinux360",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

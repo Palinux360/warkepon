@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Instrucciones del Juego</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="container">
+
+        <section id="titulos">
+            <h1 class="titulo">Warkepon</h1>
+            <h2 class="subtitulo">Bienvenido a Warkepon! Aquí están las instrucciones para jugar:</h2>
+        </section>
+    
+        <div id="content">
+            <p>Primero selecciona tu mascota favorita para el combate y luego presiona en el botón <b>"Seleccionar"</b>.</p>
+    
+            <div id="content2">
+                <ul>
+                    <p>Cada mascota tiene siete ataques distintos que podrás usar en el combate:</p>
+                    <li><strong>Hipodoge: </strong> AGUA (💧) (💧) (💧)  - TIERRA (🪨) (🪨) - FUEGO (🔥) - RAYO (⚡)</li>
+                    <li><strong>Capipepo: </strong> TIERRA (🪨) (🪨) (🪨)  - AGUA (💧) (💧) - VIENTO (💨) - FUEGO (🔥)</li>
+                    <li><strong>Ratigueya: </strong> FUEGO (🔥) (🔥) (🔥)  - RAYO (⚡) (⚡) - AGUA (💧) - TIERRA (🪨)</li>
+                    <li><strong>Langostelvis: </strong> RAYO (⚡) (⚡) - FUEGO (🔥) (🔥) - TIERRA (🪨) (🪨) - VIENTO (💨)</li>
+                    <li><strong>Tucapalma: </strong> VIENTO (💨) (💨) (💨) - FUEGO (🔥) (🔥) - RAYO (⚡) - TIERRA (🪨)</li>
+                    <li><strong>Pydos: </strong> RAYO (⚡) (⚡) (⚡) - AGUA (💧) (💧) - VIENTO (💨) - TIERRA (🪨)</li>
+                    <li><strong>Thoreon: </strong> RAYO (⚡) (⚡) (⚡) - TIERRA (🪨) (🪨) - VIENTO (💨) - AGUA (💧)</li>
+                    <li><strong>Gokurry: </strong> FUEGO (🔥) (🔥) - RAYO (⚡) (⚡) - VIENTO (💨) (💨) - AGUA (💧)</li>
+                    <li><strong>Aerokrip: </strong> TIERRA (🪨) (🪨) - RAYO (⚡) (⚡) - VIENTO (💨) - AGUA (💧) - FUEGO (🔥)</li>
+                </ul>
+            </div>
+    
+            <p>El resultado de cada ronda de ataques dependerá de la siguiente comparación de poderes:</p>
+            
+            <div id="content2">
+                <ul>
+                    <li><strong>FUEGO (🔥)</strong> -> Le gana a TIERRA (🪨) y a VIENTO (💨); pero pierde con AGUA (💧) y con RAYO (⚡)</li>
+                    <li><strong>AGUA (💧) </strong>-> Le gana a FUEGO (🔥) y a RAYO (⚡); pero pierde con VIENTO (💨) y con TIERRA (🪨)</li>
+                    <li><strong>TIERRA (🪨)</strong> -> Le gana a AGUA (💧) y a VIENTO (💨); pero pierde con FUEGO (🔥) y con RAYO (⚡)</li>
+                    <li><strong>VIENTO (💨)</strong> -> Le gana a AGUA (💧) y a RAYO (⚡); pero pierde con FUEGO (🔥) y con TIERRA (🪨)</li>
+                    <li><strong>RAYO (⚡)</strong> -> Le gana a TIERRA (🪨) y a FUEGO (🔥); pero pierde con AGUA (💧) y con VIENTO (💨)</li>
+                </ul>
+            </div>
+    
+            <p>Elige tu modo de juego: </p>
+            
+            <div id="content2">
+                <ul>
+                    <li><strong>Enemigo Aleatorio:</strong> Jugaras contra tu PC, quien seleccionará aleatoriamente una mascota y luego escogerá el orden de los ataques.</li>
+                    <li><strong>Caverna de Enemigos:</strong> Entrarás a un mapa donde podras desplazar tu mascota para seleccionar un adversario. Luego el PC escogerá el orden de los ataques.</li>
+                    <li><strong>Enemigo Online:</strong> Esperaras a un adversario real conectado desde cualquier lugar del mundo. Una vez en combate, cuando uno de los jugadores dispare su ataque, el oponente tendrá 10 segundos para atacar; de lo contrario perderá la ronda por <b>TimeOut</b>.</li>
+                </ul>
+            </div>
+        
+            <p><b>¡Qué esperas! A jugar...</b></p>
+            
+             <button id="boton-regresar">Regresar</button>
+             <p></p>
+      
+        </div>
+
+
+
+    </div>
+    
+ 
+    <footer>
+        <p>
+            Desarrollado por <a href="https://www.linkedin.com/in/palinux360" target="_blank">Palinux360</a> |
+            <a href="notas.html" target="_blank">Notas de diseño</a> |
+            <a href="instrucciones.html" target="_blank">Instrucciones del juego</a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('boton-regresar').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+</body>
+</html>
