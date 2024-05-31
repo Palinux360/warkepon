@@ -653,8 +653,8 @@ function animacionCombate(ataqueRondaJugador, ataqueRondaEnemigo, ganador) {
             if(desplazamientoX == 100 && ganador == "empate"){
                 lienzoCombate.font = 'bold 18px Arial'
                 lienzoCombate.fillStyle = 'red'
-                lienzoCombate.fillText("⮯", 92 + desplazamientoX, 85) 
-                lienzoCombate.fillText("⮬", 301 - desplazamientoX, 70)    
+                lienzoCombate.fillText('↘', 92 + desplazamientoX, 85) 
+                lienzoCombate.fillText('↖', 301 - desplazamientoX, 70)    
             }
 
                        
@@ -673,12 +673,12 @@ function animacionCombate(ataqueRondaJugador, ataqueRondaEnemigo, ganador) {
             if(desplazamientoX == repeticiones*10 && ganador == "jugador"){
 
                 lienzoCombate.fillStyle = 'black'
-                lienzoCombate.fillText(" ⮞", 90 + desplazamientoX, 80)
+                lienzoCombate.fillText("►", 90 + desplazamientoX, 80)
                
                 }
                 else if(desplazamientoX == repeticiones*10 && ganador == "enemigo"){
                 lienzoCombate.fillStyle = 'black'
-                lienzoCombate.fillText("⮜", 296 - desplazamientoX, 75)
+                lienzoCombate.fillText("◄", 296 - desplazamientoX, 75)
                 }
 
 
