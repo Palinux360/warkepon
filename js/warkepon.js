@@ -653,8 +653,8 @@ function animacionCombate(ataqueRondaJugador, ataqueRondaEnemigo, ganador) {
             if(desplazamientoX == 100 && ganador == "empate"){
                 lienzoCombate.font = 'bold 18px Arial'
                 lienzoCombate.fillStyle = 'red'
-                lienzoCombate.fillText('↘', 92 + desplazamientoX, 85) 
-                lienzoCombate.fillText('↖', 301 - desplazamientoX, 70)    
+                lienzoCombate.fillText(')', 99 + desplazamientoX, 81) 
+                lienzoCombate.fillText('(', 299 - desplazamientoX, 69)    
             }
 
                        
