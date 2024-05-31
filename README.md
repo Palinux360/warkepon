@@ -1,6 +1,6 @@
 # Mokepon - Reestructuración del Proyecto
 
-Este juego fue desarrollado por P[Palinux360](https://github.com/Palinux360) como una reestructuración completa del proyecto Mokepon del curso de programación básica de Platzi. Se utilizaron lenguajes de programación y herramientas vistas en el curso, como HTML, CSS, JavaScript, Canvas, Node.js, Express.js y Cors.js. Todas las optimizaciones y nuevas funciones en el código se realizaron para mejorar la experiencia del usuario y hacer el juego más entretenido. Los principales cambios incorporados son:
+Este juego fue desarrollado por [Palinux360](https://github.com/Palinux360){:target="_blank"} como una reestructuración completa del proyecto Mokepon del curso de programación básica de [Platzi](https://platzi.com/cursos/programacion-basica/){:target="_blank"}. Se utilizaron lenguajes de programación y herramientas vistas en el curso, como HTML, CSS, JavaScript, Canvas, Node.js, Express.js y Cors.js. Todas las optimizaciones y nuevas funciones en el código se realizaron para mejorar la experiencia del usuario y hacer el juego más entretenido. Los principales cambios incorporados son:
 
 ## Principales Cambios Incorporados
 
@@ -44,6 +44,5 @@ El Back-end del juego está desplegado en render.com en una cuenta de pruebas gr
 
 ## Autor
 
-Desarrollado por [Palinux360](https://github.com/Palinux360).
-
+Desarrollado por [Palinux360](https://github.com/Palinux360){:target="_blank"}.
 
