@@ -962,7 +962,7 @@ function buscarEmoji(nombreEmoji){
 function pedirAtaqueOnlineEnemigo(){
     let emoji = null
 
-    fetch(`http://localhost:8080/warkepon/${enemigoOnlineId}/bajar_ataques`, {
+    fetch(`https://warkepon.onrender.com/warkepon/${enemigoOnlineId}/bajar_ataques`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json" // Esta es la cabecera para indicar el tipo de contenido a enviar, en este caso un JSON.
@@ -997,7 +997,7 @@ function pedirAtaqueOnlineEnemigo(){
 }
 
 function reportarAtaqueOnline() {
-    fetch(`http://localhost:8080/warkepon/${jugadorId}/subir_ataques`, {
+    fetch(`https://warkepon.onrender.com/warkepon/${jugadorId}/subir_ataques`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json" // Esta es la cabecera para indicar el tipo de contenido a enviar, en este caso un JSON.
@@ -1029,7 +1029,7 @@ function reportarAtaqueOnline() {
 }
 
 function obtenerMokeponEnemigoOnline() {
-    fetch(`http://localhost:8080/warkepon/${jugadorId}/adversario`, {
+    fetch(`https://warkepon.onrender.com/warkepon/${jugadorId}/adversario`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json" // Esta es la cabecera para indicar el tipo de contenido a enviar, en este caso un JSON.
@@ -1087,7 +1087,7 @@ function pedirAdversarioAlServidor(){
 
  function reportarFinalJuego(){
 
-    fetch(`http://localhost:8080/warkepon/${jugadorId}/final`, {
+    fetch(`https://warkepon.onrender.com/warkepon/${jugadorId}/final`, {
         method:"post",
         headers: {
             "Content-Type": "application/json" //Esta es la cabecera para indicar el tipo de contenido a enciar, en este caso un JSON.
@@ -1100,7 +1100,7 @@ function pedirAdversarioAlServidor(){
 
  function reportarMokeponJugador(mascotaOnline){
 
-    fetch(`http://localhost:8080/warkepon/${jugadorId}`, {
+    fetch(`https://warkepon.onrender.com/warkepon/${jugadorId}`, {
         method:"post",
         headers: {
             "Content-Type": "application/json" //Esta es la cabecera para indicar el tipo de contenido a enciar, en este caso un JSON.
@@ -1113,7 +1113,7 @@ function pedirAdversarioAlServidor(){
 }
 
 function cantidadJugadoresOnline(){
-    fetch("http://localhost:8080/jugadores")
+    fetch("https://warkepon.onrender.com/jugadores")
 
         .then(function (res){
             
@@ -1128,7 +1128,7 @@ function cantidadJugadoresOnline(){
 }
 
 function unirseAlJuegoOnline(){
-    fetch("http://localhost:8080/unirse")
+    fetch("https://warkepon.onrender.com/unirse")
 
         .then(function (res){
             
