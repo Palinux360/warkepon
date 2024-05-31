@@ -6,7 +6,7 @@ app.use(express.static('public'))
 app.use(cors())
 app.use(express.json())
 
-const port = 8080
+const port = process.env.PORT || 8080
 const jugadores = []
 const combatesOnline = []
 let ataquesPorPartida = 7
